@@ -1,9 +1,9 @@
-SELECTIONS TO BE APPLIED:
-- at least one AK8 jet - (no jetID)
-- at least one electron in the electron case (or muon in the muon case) - (no leptonID)
+SELECTIONS TO BE APPLIED: 
+- at least one AK8 jet - (no jetID request)
+- at least one electron in the electron case (or muon in the muon case) - (no leptonID request)
 
 
-VARIABLES:
+VARIABLES TO BE STORED IN THE SYNCH-NTUPLES:
 
   int run;
   int event;
