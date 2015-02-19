@@ -1,6 +1,6 @@
-SELECTIONS TO APPLY:
-- at least one AK8 jet (no ID)
-- at least one lepton (no ID)
+SELECTIONS TO BE APPLIED:
+- at least one AK8 jet - (no jetID)
+- at least one electron in the electron case (or muon in the muon case) - (no leptonID)
 
 
 VARIABLES:
