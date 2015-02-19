@@ -1,0 +1,50 @@
+SELECTIONS TO APPLY:
+- at least one AK8 jet (no ID)
+- at least one lepton (no ID)
+
+
+VARIABLES:
+
+  int run;
+  int event;
+  int lumi;
+  int nPV;
+
+  float pfMET;
+  float pfMETPhi;
+
+  int nLooseEle; //number of electrons with looseID
+  int nLooseMu; //number of electrons with looseID	
+
+//SELECTED LEPTON - the most energetic one with HEEPID/HighPtMuonID :
+  float l_pt; 
+  float l_eta; 
+  float l_phi; 
+
+//FAT JET: most energetic AK8 jet with loosejetID && cleaned from the all HEEP/highPtMuon leptons:
+  float jet_pt; 
+  float jet_eta; 
+  float jet_phi; 
+  float jet_mass_pruned;
+  float jet_mass_softdrop; 
+  float jet_tau2tau1; 
+
+//W boson:
+  float W_pt;
+  float W_eta;
+  float W_phi;
+
+//lvj MASS:
+  float m_lvj;
+
+//AK4 JETS collection: - cleaned from the all HEEP/highPtMuon leptons && dR>=1.0 from the fat jet 
+  int njets;  //AK4 jets
+  int nbtag;  //number of AK4 jets b-tagged with iCSVM
+  float jet2_pt;  //1st most energetic AK4 
+  float jet2_btag;  //1st most energetic AK4 
+  float jet3_pt;  //2nd most energetic AK4 
+  float jet3_btag;  //2nd most energetic AK4 
+
+NB: default value for the variable if this is not available= -99
+
+
