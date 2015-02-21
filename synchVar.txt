@@ -21,7 +21,7 @@ VARIABLES TO BE STORED IN THE SYNCH-NTUPLES:
   float l_eta; 
   float l_phi; 
 
-//FAT JET: the most energetic AK8 jet satisfying loosejetID && cleaned from the all HEEP/highPtMuon leptons:
+//FAT JET: the most energetic AK8 jet satisfying loosejetID && cleaned from the all HEEP/highPtMuon leptons in a cone dR=1.0:
   float jet_pt; 
   float jet_eta; 
   float jet_phi; 
