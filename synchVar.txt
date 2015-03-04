@@ -13,15 +13,15 @@ VARIABLES TO BE STORED IN THE SYNCH-NTUPLES:
   float pfMET;
   float pfMETPhi;
 
-  int nLooseEle; //number of electrons with looseID
-  int nLooseMu; //number of electrons with looseID	
+  int nLooseEle; //number of loose electrons
+  int nLooseMu; //number of loose muons
 
-//SELECTED LEPTON - the most energetic one satisfying HEEP_ID/HighPtMuon_ID :
+//SELECTED LEPTON - the most energetic tight electron/muon :
   float l_pt; 
   float l_eta; 
   float l_phi; 
 
-//FAT JET: the most energetic AK8 jet satisfying loosejetID && cleaned from the all HEEP/highPtMuon leptons in a cone dR=1.0:
+//FAT JET: the most energetic AK8 jet satisfying loosejetID && cleaned from the all tight leptons in a cone dR=1.0:
   float jet_pt; 
   float jet_eta; 
   float jet_phi; 
@@ -37,7 +37,7 @@ VARIABLES TO BE STORED IN THE SYNCH-NTUPLES:
 //lvj MASS:
   float m_lvj;
 
-//AK4 JETS collection: - cleaned from the all HEEP/highPtMuon leptons && dR>=1.0 from the fat jet && isLooseJetId
+//AK4 JETS collection: - cleaned from the all tight leptons && dR>=1.0 from the fat jet && isLooseJetId
   int njets;  //AK4 jets
   int nbtag;  //number of AK4 jets b-tagged with iCSVM
   float jet2_pt;  //1st most energetic AK4 
@@ -46,5 +46,15 @@ VARIABLES TO BE STORED IN THE SYNCH-NTUPLES:
   float jet3_btag;  //2nd most energetic AK4 
 
 NB: default value for the variable if this is not available= -99
+
+LEPTONIDs:
+
+Electrons:
+- loose: HEEPv5.1 + pT>35
+- tight: HEEPv5.1 + pT>90
+
+Muons:
+- loose: isHighPtMuon + trackIso / pt >= 0.1 + pt > 20 + |eta| < 2.4
+- tight: isHighPtMuon + trackIso / pt >= 0.1 + pt > 40 + |eta| < 2.4
 
 
