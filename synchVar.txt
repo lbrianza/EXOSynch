@@ -54,7 +54,7 @@ Electrons:
 - tight: HEEPv5.1 + pT>90
 
 Muons:
-- loose: isHighPtMuon + trackIso / pt >= 0.1 + pt > 20 + |eta| < 2.4
-- tight: isHighPtMuon + trackIso / pt >= 0.1 + pt > 40 + |eta| < 2.4
+- loose: isHighPtMuon + trackIso / pt < 0.1 + pt > 20 + |eta| < 2.4
+- tight: isHighPtMuon + trackIso / pt < 0.1 + pt > 40 + |eta| < 2.4
 
 
