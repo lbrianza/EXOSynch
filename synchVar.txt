@@ -37,7 +37,7 @@ VARIABLES TO BE STORED IN THE SYNCH-NTUPLES:
 //lvj MASS:
   float m_lvj;
 
-//AK4 JETS collection: - cleaned from the all tight leptons && dR>=1.0 from the fat jet && isLooseJetId
+//AK4 JETS collection: - cleaned from the all tight leptons in a cone dR=0.3 && dR>=0.8 from the fat jet && isLooseJetId && pt>30 && |eta|<2.4
   int njets;  //AK4 jets
   int nbtag;  //number of AK4 jets b-tagged with iCSVM
   float jet2_pt;  //1st most energetic AK4 
