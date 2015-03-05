@@ -117,7 +117,7 @@ public:
 	drawHistos("jet_phi",100, -3.14, 3.14);
 	drawHistos("jet_mass_pruned",100, 0, 200);
 	drawHistos("jet_mass_softdrop",100, 0, 200);
-	drawHistos("jet_mass_tau2tau1",50, 0, 1);
+	drawHistos("jet_tau2tau1",50, 0, 1);
         drawHistos("W_pt", 100, 0, 1000);
         drawHistos("W_eta", 60, -3, 3);
 	drawHistos("W_phi",100, -3.14, 3.14);
