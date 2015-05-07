@@ -1,0 +1,42 @@
+LEVEL 2 OF SYNCHRONIZATION
+
+1) Selected Lepton:
+The one with largest pt inside the TIGHT collection
+
+TIGHT means:
+- for electron: HEEP=true, pt>90
+- for muon: highPt=true, trackIso/pt<0.1, pt>50, eta<2.1
+
+2) Veto additional loose leptons, where LOOSE means:
+- for electron:  HEEP=true, pt>35
+- for muon: highPt=true, trackIso/pt<0.1, pt>20, eta<2.4
+ 
+3) Selected AK8 jet:
+The one with largest pt that respects the following requirements:
+- Pt>200
+- Eta<2.4
+- LooseJetId=true
+- Cleaned from ALL TIGHT leptons in the event --> dR(AK8,tigh lepton)>1.0
+
+4) Additional AK4 jets:
+- Pt>30
+- Eta<2.4
+- LooseJetId=true
+- Cleaned from the selected AK8 --> dR(AK8,AK4)>0.8
+- Cleaned from ALL TIGHT leptons in the event --> dR(AK8,tigh lepton)>0.3
+
+5) General selections:
+- MUON CASE:
+BackToBackTopology && WWTree->W_pt>200 && WWTree->pfMET>40 && WWTree->l_pt>50 && WWTree->jet_pt>200 && 
+WWTree->nbtag <1 && WWTree->jet_mass_pruned > 40 && WWTree->jet_mass_pruned < 130 && WWTree->jet_tau2tau1<0.5
+- ELECTRON CASE:
+BackToBackTopology && WWTree->W_pt>200 && WWTree->pfMET>80 && WWTree->l_pt>90 && WWTree->jet_pt>200 && 
+WWTree->nbtag <1 && WWTree->jet_mass_pruned > 40 && WWTree->jet_mass_pruned < 130 && WWTree->jet_tau2tau1<0.5
+
+Where:
+- BackToBackTopology means: 
+dR(lep,ak8)>(TMath::Pi()/2.0) && fabs(deltaphi(MET,ak8)>2.0 && fabs(deltaphi(W,ak8))>2.0
+- nbtag means:
+Number of AK4 jets (see point 4) ) with bDiscriminatorICSV_v2>0.814
+
+
