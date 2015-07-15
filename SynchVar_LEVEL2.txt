@@ -5,7 +5,7 @@ The one with largest pt inside the TIGHT collection
 
 TIGHT means:
 - for electron: HEEP=true, pt>90
-- for muon: highPt=true, trackIso/pt<0.1, pt>50, eta<2.1
+- for muon: highPt=true, trackIso/pt<0.1, pt>50, eta<2.1, isPFMuon = true
 
 2) Veto additional loose leptons, where LOOSE means:
 - for electron:  HEEP=true, pt>35
