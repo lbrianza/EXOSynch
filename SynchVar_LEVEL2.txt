@@ -4,8 +4,8 @@ LEVEL 2 OF SYNCHRONIZATION
 The one with largest pt inside the TIGHT collection
 
 TIGHT means:
-- for electron: HEEP=true, pt>90
-- for muon: highPt=true, trackIso/pt<0.1, pt>50, eta<2.1, isPFMuon = true
+- for electron: HEEPv6.0=true, pt>90
+- for muon: highPt=true, trackIso/pt<0.1, pt>50, eta<2.1
 
 2) Veto additional loose leptons, where LOOSE means:
 - for electron:  HEEP=true, pt>35
@@ -37,6 +37,10 @@ Where:
 - BackToBackTopology means: 
 dR(lep,ak8)>(TMath::Pi()/2.0) && fabs(deltaphi(MET,ak8)>2.0 && fabs(deltaphi(W,ak8))>2.0
 - nbtag means:
-Number of AK4 jets (see point 4) ) with bDiscriminatorICSV_v2>0.814
+Number of AK4 jets (see point 4) ) with bDiscriminatorICSV_v2>0.890
+
+in addition:
+- PU reweighing
+- Apply noise filters
 
 
